@@ -1,7 +1,6 @@
-from pydantic import BaseModel, ValidationError
+from pydantic import BaseModel
 from sqlalchemy import insert, update, select, delete, Table
 from sqlalchemy.ext.asyncio import AsyncSession
-from typing import Iterable
 
 
 async def create_new_element(session: AsyncSession, table: Table, data: BaseModel):

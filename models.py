@@ -1,8 +1,9 @@
 from datetime import datetime
-
 from sqlalchemy import Column, Integer, String, ForeignKey, Date, Time, Text, Table, MetaData
 
+
 metadata = MetaData()
+
 
 departments = Table(
     "departments",
